@@ -1,0 +1,209 @@
+body{
+    background-color: rgb(86, 218, 185);
+    color: rgb(0, 0, 0);
+}
+#header{
+    display: flex;
+    font-size: 50px;
+    margin: 5% 0 0 10%;
+}
+#Addbutton{
+    z-index: 1;
+    position: absolute;
+    left: 80%;
+    cursor: pointer;
+}
+.coloris{
+    color: red;
+}
+#modeldiv{
+    display: none;
+    position: fixed;
+    padding: 20% 0 0 30%;
+    top: -10%;
+    z-index: 1;
+    color: rgb(8, 8, 8);
+    background-color: rgb(197, 60, 26);
+    width: 100vw;
+    height: 100vh;
+}
+#modelbox{
+    border-radius: 12px;
+    width: 30vw;
+    height: 30vh;
+    padding: 10px 0 0 0px;
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+}
+.main-text{
+    color: black;
+    font-size: 50px;
+}
+.red-button{
+    border-radius: 250px;
+    margin-top: 5%;
+    color: whitesmoke;
+    background-color: red;
+    font-size: 30px;
+    width: 25%;
+    height: 20%;
+    cursor: pointer;
+}
+button{
+    border: none;
+}
+#model-close-button{
+    margin-left: 10%;
+}
+.model-content{
+    margin-top: 3%;
+}
+.input-box{
+    width: 80%;
+    height: 25%;
+    text-align: center;
+    font-size: 30px;
+}
+#outer_container{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 10%;
+    width: 90%;
+}
+.card{
+    list-style: none;
+    display: none;
+    position: relative;
+    min-height: 350px;
+    min-width: 15%;
+    text-align: center;
+    border-radius: 12px;
+    margin: 5% 0 0 10%;
+    padding: 10px 0 0 0;
+    background: beige;
+    box-shadow: 0px 0px 20px skyblue;
+}
+.card-head{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    color: gray;
+    cursor: pointer;
+}
+.list-element{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.buttons-in-card{
+    display: flex;
+    font-size: 30px;
+}
+.delete-button-in-card{
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(37, 18, 207);
+    background-color: beige;
+}
+.add-button-in-card{
+    position: absolute;
+    bottom: 10px;
+    font-size: 25px;
+    margin-left: 15%;
+    right: 10px;
+    cursor: pointer;
+    color: rgb(22, 34, 201);
+    background-color: beige;
+}
+.innerlist-button{
+    cursor: pointer;
+}
+#modeldiv_card{
+    display: none;
+    position: fixed;
+    padding: 20% 0 0 30%;
+    text-align: center;
+    top: -10%;
+    z-index: 1;
+    color: whitesmoke;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+#modelbox_card{
+    border-radius: 9px;
+    width: 30vw;
+    height: 30vh;
+    padding: 10px 0 0 0px;
+    text-align: center;
+    color: black;
+    background-color: blanchedalmond;
+}
+.this-list-element{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(52, 160, 25);
+}
+#check-done{
+    color: black;
+    background-color: rgb(14, 13, 13);
+    display: none;
+}
+.mark-as-done-class{
+    background-color: rgb(218, 6, 6);
+    color: beige;
+    font-size: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0px 10px 10px 10px;
+}
+#back_button{
+    margin-left: 10%;
+   font-size: 40px;
+   display: none;
+}
+#back-icon{
+    z-index: 20;
+    font-size: 40px;   
+    color: skyblue;
+    cursor: pointer;
+}
+#dynamic-card{
+    justify-content: center;
+    font-size: 55px;
+    font-weight: 700;
+    color: skyblue;
+    display: none;
+}
+#empty-list{
+    position: relative;
+    top: 10vh;
+    margin-left: 30vw;
+    color: rgb(7, 7, 7);
+    font-size: 55px;
+    font-weight: 800;
+}
+
+@keyframes modelPop {
+    0% { transform: scale(0); };
+    50% { transform: scale(0.5); };
+    100% { transform: scale(1); };
+}
+
+@keyframes cardAnimate {
+    0% { transform: scaleX(0); };
+    100% { transform: scaleX(1) };
+}
+
+@keyframes cardTextAnimate {
+    0% { transform: scaleY(0); };
+    100% { transform: scaleY(1) };
+}
